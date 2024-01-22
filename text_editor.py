@@ -1,5 +1,4 @@
-from tkinter import *
-from tkinter import ttk            
+from tkinter import *           
 import customtkinter
 
 window = Tk()
@@ -28,7 +27,7 @@ aling_right=Button(window, text="B",image= aling_right_image)
 aling_right.grid(row=0,column=4)
 
 
-#  
+ 
 # mainframe = ttk.Frame(window, padding="3 3 12 12")
 # mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
 # window.columnconfigure(0, weight=1)
