@@ -1,13 +1,14 @@
 from tkinter import *           
-import customtkinter
+# import customtkinter
 from functions import *
 
 window = Tk()
 window.geometry("600x600") 
+window.iconbitmap("assets\icone_texto.ico")
 window.title("Rich text Editor ")
 
 title = Label(window,text="Let's start")
-text = Label(window,text= "Here is an example")
+text = Entry()
 
 #buttons
 bold_image= PhotoImage(file = "./assets/bold.png")
@@ -26,19 +27,14 @@ aling_right_image= PhotoImage(file = "./assets/aling_right.png")
 aling_right=Button(window, text="B",image= aling_right_image)
 
 # GRID positioning
-title.grid(row=0,)
-bold.grid(row=1,column=0)
-italic.grid(row=1,column=1)
-aling_left.grid(row=1,column=2)
-aling_center.grid(row=1,column=3)
-aling_right.grid(row=1,column=4)
-text.grid(row=2,    )
+bold.grid(column=0)
+italic.grid(column=0)
+aling_left.grid(column=0)
+aling_center.grid(column=0)
+aling_right.grid(column=0)
+text.grid(column=2    )
 
- 
-# mainframe = ttk.Frame(window, padding="3 3 12 12")
-# mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
-# window.columnconfigure(0, weight=1)
-# window.rowconfigure(0, weight=1)
+#USAR SPAM para mesclar
 
 
 window.mainloop()
