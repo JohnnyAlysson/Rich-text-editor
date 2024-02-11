@@ -1,6 +1,0 @@
-codesnap
-colohighligh
-dracula
-imagepreview
-material icon theme
-vspets

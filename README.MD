@@ -32,9 +32,6 @@
 
  <a href = "#licenca"> > Licença </a>
 
-<!-- <p id=sobre></p>
-
-## Sobre -->
 <h2 id=sobre> Sobre </h2>
 
 
