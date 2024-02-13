@@ -1,0 +1,29 @@
+body{
+    margin: 8px;
+}
+
+button{
+    text-decoration: none;
+    border: none;
+
+}
+
+button:hover{
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.container{
+    align-items: center;
+    border: 2px;
+    border-style: solid;
+    gap: 10px;
+    display:flex;
+    flex-direction: column;
+}
+.header{
+    margin: 5px 0;
+    display: flex;
+    gap: 5px;
+}
