@@ -1,3 +1,4 @@
+
 var user_text = document.getElementById("user_input");
 var button = document.getElementById("boldbtn");
 var Isclicked = false;
@@ -46,18 +47,33 @@ function turnUnderline() {
     }
 }
 
-function turnUnderline() {
+function turnLinetr() {
     if(Isclicked)
     {
         document.getElementById("user_input").style.textDecoration = "none";
         Isclicked = false
-        document.getElementById("underlinebtn").style.filter = "none"
+        document.getElementById("linetrhough").style.filter = "none"
     }
     else if( Isclicked = true)
     {
-        document.getElementById("user_input").style.textDecoration = "underline" ;
+        document.getElementById("user_input").style.textDecoration = "line-through" ;
         Isclicked = true
-        document.getElementById("underlinebtn").style.filter = "drop-shadow(rgb(0, 0, 0) 0.2rem 0.2rem 0.2rem)"
+        document.getElementById("linetrhough").style.filter = "drop-shadow(rgb(0, 0, 0) 0.2rem 0.2rem 0.2rem)"
+    }
+}
+
+function alingLeft() {
+    if(Isclicked)
+    {
+        document.getElementById("user_input").style.textDecoration = "none";
+        Isclicked = false
+        document.getElementById("linetrhough").style.filter = "none"
+    }
+    else if( Isclicked = true)
+    {
+        document.getElementById("user_input").style.textDecoration = "line-through" ;
+        Isclicked = true
+        document.getElementById("linetrhough").style.filter = "drop-shadow(rgb(0, 0, 0) 0.2rem 0.2rem 0.2rem)"
     }
 }
 
