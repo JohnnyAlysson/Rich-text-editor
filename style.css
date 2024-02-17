@@ -4,15 +4,8 @@ body{
 
 button{
     text-decoration: none;
-    border: none;
 
 }
-
-button:hover{
-    animation: 1s ease-in-out;
-    filter: drop-shadow(rgb(0, 0, 0) 0.2rem 0.2rem 0.2rem);
-}
-
 /* button:enabled{
     border: 2px solid black;
     border-radius: 5px;
