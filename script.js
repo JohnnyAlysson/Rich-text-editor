@@ -2,6 +2,7 @@
 var user_text = document.getElementById("user_input");
 var button = document.getElementById("boldbtn");
 var Isclicked = false;
+// var button = document.getElementsByTagName("button")
 
 
 function turnBold() {
@@ -65,15 +66,43 @@ function turnLinetr() {
 function alingLeft() {
     if(Isclicked)
     {
-        document.getElementById("user_input").style.textDecoration = "none";
+        document.getElementById("user_input").style.textAlign = "none";
         Isclicked = false
-        document.getElementById("linetrhough").style.filter = "none"
+        document.getElementById("leftbtn").style.filter = "none"
     }
     else if( Isclicked = true)
     {
-        document.getElementById("user_input").style.textDecoration = "line-through" ;
+        document.getElementById("user_input").style.textAlign = "left" ;
         Isclicked = true
-        document.getElementById("linetrhough").style.filter = "drop-shadow(rgb(0, 0, 0) 0.2rem 0.2rem 0.2rem)"
+        document.getElementById("leftbtn").style.filter = "drop-shadow(rgb(0, 0, 0) 0.2rem 0.2rem 0.2rem)"
+    }
+}
+function alingcenter() {
+    if(Isclicked)
+    {
+        document.getElementById("user_input").style.textAlign = "none";
+        Isclicked = false
+        document.getElementById("centerbtn").style.filter = "none"
+    }
+    else if( Isclicked = true)
+    {
+        document.getElementById("user_input").style.textAlign = "center" ;
+        Isclicked = true
+        document.getElementById("centerbtn").style.filter = "drop-shadow(rgb(0, 0, 0) 0.2rem 0.2rem 0.2rem)"
+    }
+}
+function justify() {
+    if(Isclicked)
+    {
+        document.getElementById("user_input").style.textAlign = "none";
+        Isclicked = false
+        document.getElementById("justifybtn").style.filter = "none"
+    }
+    else if( Isclicked = true)
+    {
+        document.getElementById("user_input").style.textAlign = "justify" ;
+        Isclicked = true
+        document.getElementById("justifybtn").style.filter = "drop-shadow(rgb(0, 0, 0) 0.2rem 0.2rem 0.2rem)"
     }
 }
 
