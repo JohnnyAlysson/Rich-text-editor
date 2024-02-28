@@ -3,38 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    <title>Rich Text Editor</title>
+    <title>Rich text Editor</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <form>
-                <select name="fontfamily">
-                    <option value="">Font family</option>
-                    <option value="option1">option1</option>
-                    <option value="option2">option2</option>
-                </select>
-            </form>
-            <button title="Bold" title="Bold" ><i onclick="turnBold()" id="boldbtn" class="fa-solid fa-bold" ></i></button>
-            <button title="Italic"><i onclick="turnItalic()" id="italicbtn" class="fa-solid fa-italic"></i></button>
-            <button title="Underline"><i onclick="turnUnderline()" id = "underlinebtn" class="fa-solid fa-underline"></i></button>
-            <button title="Line Through"><i onclick="turnLinetr()" id= "linetrhough"class="fa-solid fa-strikethrough"></i></button>
-            <button title="Aling left"><i onclick="alingLeft()" id="leftbtn" class="fa-solid fa-align-left"></i></button>
-            <button title="Aling center"><i onclick="alingcenter()" id="centerbtn" class="fa-solid fa-align-center"></i></button>
-            <button title="Justify"><i onclick="justify()" id="justifybtn" class="fa-solid fa-align-justify"></i></button>
-            <button title="Aling right"><i class="fa-solid fa-align-right"></i></button>
-            <button title="List"><i class="fa-solid fa-list"></i></button>
-            <button title="Highlight"><i class="fa-solid fa-highlighter"></i></i></button>
-        </div>
-        <div class="text">
-            <textarea title= "Insert your text here "class="text_user_class" name="text_user" id="user_input" cols="50" rows="10" spellcheck="true"></textarea>
-        </div>
-
-    </div>
     
+    <div class="section">
+        <div class="row">
+            <div class="header">
+                <div class="first box">
+                    <input type="number" id="font-size" min="1" max="100" value="16" onchange="changeFontSize(this)">
+                </div>
+                <div class="second box">
+                    <button type="button" onclick="turnBold(this)">
+                        <i class="fa-solid fa-bold"></i>
+                    </button>
+                    <button type="button" onclick="turnItalic(this)">
+                        <i class="fa-solid fa-italic"></i>
+                    </button>
+                    <button type="button" onclick="turnUnderline(this)">
+                        <i class="fa-solid fa-underline"></i>
+                    </button>
+                </div>
+                <div class="third box">
+                    <button type="button" onclick="alingLeft(this)">
+                        <i class="fa-solid fa-align-left"></i>
+                    </button>
+                    <button type="button" onclick="alingCenter(this)">
+                        <i class="fa-solid fa-align-center"></i>
+                    </button>
+                    <button type="button" onclick="alingRight(this)">
+                        <i class="fa-solid fa-align-right"></i>
+                    </button>
+                </div>
+                <div class="fourth box" onclick="upper(this)">
+                    <button type="button">
+                        aA
+                    </button>
+                    <button type="button" onclick="resetStyle(this)">
+                        <i class="fa-solid fa-text-slash"></i>
+                    </button>
+                    <input type="color" onchange="changeColor(this)">
+                </div>
+            </div>
+            <br>
+            <div class="header">
+                <textarea id="textarea" placeholder="Put your text here"></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
     <script src="https://kit.fontawesome.com/e817e6100b.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
 </body>
 </html>
