@@ -1,6 +1,10 @@
 const textarea = document.getElementById("textarea");
 
 
+function changeFontFamily(element){
+    let value = element.value;
+    textarea.style.fontFamily = value;
+}
 function changeFontSize(element){
     let value = element.value;
     textarea.style.fontSize = value + "px";
@@ -74,12 +78,16 @@ function resetStyle(element){
     textarea.style.color ="#000";
 }
 
-
-
-
-
-
 function changeColor(element){
     let value = element.value;
     textarea.style.color = value ;
+}
+
+function donwloadTxt(element){
+    var downloadableLink = document.createElement('a');
+    downloadableLink.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(textarea.value));
+    downloadableLink.download = "myFile" + ".txt";
+    document.body.appendChild(downloadableLink);
+    downloadableLink.click();
+    document.body.removeChild(downloadableLink);
 }
