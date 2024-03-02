@@ -31,15 +31,17 @@ A rich text editor is an interface or input field for text editing, that inclu
 
 The application runs online via GitHub pages, and you can check out the functions. It has a lot of room for improvement, so as I learn new skills and abilities, I will update and improve the application, and I plan to publish it as an API.
 
-Initially, I was going to make the application with Python and TKinter; however, I decided to change the tools in order to run and deploy it online. That was my first challenge. Later I had another problem: highlight the button as it was clicked, after some research I managed to understand how the focus and active property in CSS works. Futhermore I have never studied Javascript before, so I had to learn functions, listeners and get elements etc. In the end I expected to finish the project in 1 week, and took me 1 month to actually finish it.
+Initially, I was going to make the application with Python and TKinter; however, I decided to change the tools in order to run and deploy it online. That was my first challenge. Later I had another problem: highlight the button as it was clicked, after some research I managed to understand how the `focus` and `active` property in CSS works. Futhermore I have never studied Javascript before, so I had to learn functions, listeners and get elements etc. In the end I expected to finish the project in 1 week, and took me 1 month to actually finish it.
 
 Through this project, I not only achieved my initial goal of creating a rich text editor but also acquired valuable insights, overcoming challenges that expanded my proficiency in both CSS and JavaScript. This journey stands as a testament to the iterative nature of development and the continuous growth.
+
+Later, I hope to improve the selection and styles of specific parts of the text and not all the text; furthermore, I hope to add more functions like lists and links.
 
 
 <h2 id=feature>Features: </h2>
 
 1. Font and Size Selection: Choose from a variety of font styles, including Arial, Georgia, Times New Roman, and Style Script. Adjust the font size to your preference.
-2. Text Formatting: Make your text stand out by toggling bold, italic, and underline styles effortlessly.
+2. Text Formatting: Make your text stand out by toggling bold, italic, and underline styles.
 3. Text Alignment: Control the alignment of your text with options for left, center, and right alignment.
 4. Additional Styling Options: Convert text to uppercase, reset styles, choose custom colors, and even download your content as a .txt file (without formating).
 5. User-Friendly Interface: The intuitive user interface ensures a seamless and enjoyable text editing experience.
@@ -47,6 +49,8 @@ Through this project, I not only achieved my initial goal of creating a rich tex
 <h2 id=howtouse> How to use: </h2>
 
 The application runs online, you can write a text and styling the way you want. If you want you can fork this project and change as well, there is no need to install anything different from the regular development tools: IDE like visual code.
+
+link : https://johnnyalysson.github.io/Rich-text-editor/
 
 
 <h2 id=demo> Demo: </h2>
